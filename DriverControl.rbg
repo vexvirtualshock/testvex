@@ -1,0 +1,303 @@
+<Version>1.0.1</Version>
+
+<ProgrammingBlock type="loop" loopType="RepeatForever"/>
+
+<ProgrammingBlock type="loop" loopType="IfThen">
+    <Parameters>
+        <Parameter name="LHS" type="typedef">vexRT[Btn8L]</Parameter>
+        <Parameter name="operator" type="typedef">==</Parameter>
+        <Parameter name="RHS" type="float">1</Parameter>
+    </Parameters>
+</ProgrammingBlock>
+
+<ProgrammingBlock type="functionCall" function="setMotor">
+    <Parameters>
+        <Parameter name="motorPort" type="base typedef" default="port1" typeDef="tMotor">port2</Parameter>
+        <Parameter name="speed" type="short" default="50">127</Parameter>
+    </Parameters>
+</ProgrammingBlock>
+
+<ProgrammingBlock type="else"/>
+
+<ProgrammingBlock type="loop" loopType="IfThen">
+    <Parameters>
+        <Parameter name="LHS" type="typedef">vexRT[Btn8R]</Parameter>
+        <Parameter name="operator" type="typedef">==</Parameter>
+        <Parameter name="RHS" type="float">1</Parameter>
+    </Parameters>
+</ProgrammingBlock>
+
+<ProgrammingBlock type="functionCall" function="setMotor">
+    <Parameters>
+        <Parameter name="motorPort" type="base typedef" default="port1" typeDef="tMotor">port2</Parameter>
+        <Parameter name="speed" type="short" default="50">-127</Parameter>
+    </Parameters>
+</ProgrammingBlock>
+
+<ProgrammingBlock type="else"/>
+
+<ProgrammingBlock type="functionCall" function="stopMotor">
+    <Parameters>
+        <Parameter name="motorPort" type="base typedef" default="port1" typeDef="tMotor">port2</Parameter>
+    </Parameters>
+</ProgrammingBlock>
+
+<ProgrammingBlock type="end"/>
+
+<ProgrammingBlock type="end"/>
+
+<ProgrammingBlock type="functionCall" function="arcadeControl">
+    <Parameters>
+        <Parameter name="verticalJoystick" type="base typedef" default="Ch2" typeDef="TVexJoysticks">Ch3</Parameter>
+        <Parameter name="horizontalJoystick" type="base typedef" default="Ch1" typeDef="TVexJoysticks">Ch4</Parameter>
+        <Parameter name="threshold" type="short" default="10">10</Parameter>
+    </Parameters>
+</ProgrammingBlock>
+
+<ProgrammingBlock type="loop" loopType="IfThen">
+    <Parameters>
+        <Parameter name="LHS" type="typedef">vexRT[Btn7L]</Parameter>
+        <Parameter name="operator" type="typedef">==</Parameter>
+        <Parameter name="RHS" type="float">1</Parameter>
+    </Parameters>
+</ProgrammingBlock>
+
+<ProgrammingBlock type="functionCall" function="setMotor">
+    <Parameters>
+        <Parameter name="motorPort" type="base typedef" default="port1" typeDef="tMotor">port3</Parameter>
+        <Parameter name="speed" type="short" default="50">127</Parameter>
+    </Parameters>
+</ProgrammingBlock>
+
+<ProgrammingBlock type="else"/>
+
+<ProgrammingBlock type="loop" loopType="IfThen">
+    <Parameters>
+        <Parameter name="LHS" type="typedef">vexRT[Btn7R]</Parameter>
+        <Parameter name="operator" type="typedef">==</Parameter>
+        <Parameter name="RHS" type="float">1</Parameter>
+    </Parameters>
+</ProgrammingBlock>
+
+<ProgrammingBlock type="functionCall" function="setMotor">
+    <Parameters>
+        <Parameter name="motorPort" type="base typedef" default="port1" typeDef="tMotor">port3</Parameter>
+        <Parameter name="speed" type="short" default="50">-127</Parameter>
+    </Parameters>
+</ProgrammingBlock>
+
+<ProgrammingBlock type="else"/>
+
+<ProgrammingBlock type="functionCall" function="stopMotor">
+    <Parameters>
+        <Parameter name="motorPort" type="base typedef" default="port1" typeDef="tMotor">port3</Parameter>
+    </Parameters>
+</ProgrammingBlock>
+
+<ProgrammingBlock type="end"/>
+
+<ProgrammingBlock type="end"/>
+
+<ProgrammingBlock type="loop" loopType="IfThen">
+    <Parameters>
+        <Parameter name="LHS" type="typedef">vexRT[Btn5D]</Parameter>
+        <Parameter name="operator" type="typedef">==</Parameter>
+        <Parameter name="RHS" type="float">1</Parameter>
+    </Parameters>
+</ProgrammingBlock>
+
+<ProgrammingBlock type="functionCall" function="setMotor">
+    <Parameters>
+        <Parameter name="motorPort" type="base typedef" default="port1" typeDef="tMotor">port4</Parameter>
+        <Parameter name="speed" type="short" default="50">127</Parameter>
+    </Parameters>
+</ProgrammingBlock>
+
+<ProgrammingBlock type="else"/>
+
+<ProgrammingBlock type="loop" loopType="IfThen">
+    <Parameters>
+        <Parameter name="LHS" type="typedef">vexRT[Btn5U]</Parameter>
+        <Parameter name="operator" type="typedef">==</Parameter>
+        <Parameter name="RHS" type="float">1</Parameter>
+    </Parameters>
+</ProgrammingBlock>
+
+<ProgrammingBlock type="functionCall" function="setMotor">
+    <Parameters>
+        <Parameter name="motorPort" type="base typedef" default="port1" typeDef="tMotor">port4</Parameter>
+        <Parameter name="speed" type="short" default="50">-127</Parameter>
+    </Parameters>
+</ProgrammingBlock>
+
+<ProgrammingBlock type="else"/>
+
+<ProgrammingBlock type="functionCall" function="stopMotor">
+    <Parameters>
+        <Parameter name="motorPort" type="base typedef" default="port1" typeDef="tMotor">port4</Parameter>
+    </Parameters>
+</ProgrammingBlock>
+
+<ProgrammingBlock type="end"/>
+
+<ProgrammingBlock type="end"/>
+
+<ProgrammingBlock type="loop" loopType="IfThen">
+    <Parameters>
+        <Parameter name="LHS" type="typedef">vexRT[Btn6D]</Parameter>
+        <Parameter name="operator" type="typedef">==</Parameter>
+        <Parameter name="RHS" type="float">1</Parameter>
+    </Parameters>
+</ProgrammingBlock>
+
+<ProgrammingBlock type="functionCall" function="setMotor">
+    <Parameters>
+        <Parameter name="motorPort" type="base typedef" default="port1" typeDef="tMotor">port5</Parameter>
+        <Parameter name="speed" type="short" default="50">127</Parameter>
+    </Parameters>
+</ProgrammingBlock>
+
+<ProgrammingBlock type="else"/>
+
+<ProgrammingBlock type="loop" loopType="IfThen">
+    <Parameters>
+        <Parameter name="LHS" type="typedef">vexRT[Btn6U]</Parameter>
+        <Parameter name="operator" type="typedef">==</Parameter>
+        <Parameter name="RHS" type="float">1</Parameter>
+    </Parameters>
+</ProgrammingBlock>
+
+<ProgrammingBlock type="functionCall" function="setMotor">
+    <Parameters>
+        <Parameter name="motorPort" type="base typedef" default="port1" typeDef="tMotor">port5</Parameter>
+        <Parameter name="speed" type="short" default="50">-127</Parameter>
+    </Parameters>
+</ProgrammingBlock>
+
+<ProgrammingBlock type="else"/>
+
+<ProgrammingBlock type="functionCall" function="stopMotor">
+    <Parameters>
+        <Parameter name="motorPort" type="base typedef" default="port1" typeDef="tMotor">port5</Parameter>
+    </Parameters>
+</ProgrammingBlock>
+
+<ProgrammingBlock type="end"/>
+
+<ProgrammingBlock type="end"/>
+
+<ProgrammingBlock type="loop" loopType="IfThen">
+    <Parameters>
+        <Parameter name="LHS" type="typedef">vexRT[Btn8D]</Parameter>
+        <Parameter name="operator" type="typedef">==</Parameter>
+        <Parameter name="RHS" type="float">1</Parameter>
+    </Parameters>
+</ProgrammingBlock>
+
+<ProgrammingBlock type="functionCall" function="forward">
+    <Parameters>
+        <Parameter name="quantity" type="float" default="1">3</Parameter>
+        <Parameter name="unitType" type="base typedef" default="rotations" typeDef="tMovementUnits">seconds</Parameter>
+        <Parameter name="speed" type="short" default="50">127</Parameter>
+    </Parameters>
+</ProgrammingBlock>
+
+<ProgrammingBlock type="functionCall" function="moveMotor">
+    <Parameters>
+        <Parameter name="motorPort" type="base typedef" default="port10" typeDef="tMotor">port4</Parameter>
+        <Parameter name="quantity" type="float" default="1">100</Parameter>
+        <Parameter name="unitType" type="base typedef" default="rotations" typeDef="tMovementUnits">seconds</Parameter>
+        <Parameter name="speed" type="short" default="50">-127</Parameter>
+    </Parameters>
+</ProgrammingBlock>
+
+<ProgrammingBlock type="else"/>
+
+<ProgrammingBlock type="functionCall" function="setMotor">
+    <Parameters>
+        <Parameter name="motorPort" type="base typedef" default="port1" typeDef="tMotor">port1</Parameter>
+        <Parameter name="speed" type="short" default="50">127</Parameter>
+    </Parameters>
+</ProgrammingBlock>
+
+<ProgrammingBlock type="end"/>
+
+<ProgrammingBlock type="end"/>
+
+<RobotConfiguration>#pragma config(Sensor, in2,    touchLED,       sensorVexIQ_LED)
+#pragma config(Sensor, in3,    colorDetector,  sensorVexIQ_ColorHue)
+#pragma config(Sensor, in4,    gyroSensor,     sensorVexIQ_Gyro)
+#pragma config(Sensor, in7,    distanceMM,     sensorVexIQ_Distance)
+#pragma config(Sensor, in8,    bumpSwitch,     sensorVexIQ_Touch)
+#pragma config(Motor,  port1,           leftMotor,     tmotorVex393_HBridge, openLoop, driveLeft)
+#pragma config(Motor,  port2,           clawMotor,     tmotorVex393_MC29, openLoop)
+#pragma config(Motor,  port3,           wristMotor,    tmotorVex393_MC29, openLoop)
+#pragma config(Motor,  port4,           elbowMotor,    tmotorVex393_MC29, openLoop)
+#pragma config(Motor,  port5,           shoulderMotor, tmotorVex393_MC29, openLoop)
+#pragma config(Motor,  port10,          rightMotor,    tmotorVex393_HBridge, openLoop, reversed, driveRight, encoderPort, None)
+//*!!Code automatically generated by 'ROBOTC' configuration wizard               !!*//
+</RobotConfiguration>
+
+<CSource>#pragma config(Sensor, in2,    touchLED,       sensorVexIQ_LED)
+#pragma config(Sensor, in3,    colorDetector,  sensorVexIQ_ColorHue)
+#pragma config(Sensor, in4,    gyroSensor,     sensorVexIQ_Gyro)
+#pragma config(Sensor, in7,    distanceMM,     sensorVexIQ_Distance)
+#pragma config(Sensor, in8,    bumpSwitch,     sensorVexIQ_Touch)
+#pragma config(Motor,  port1,           leftMotor,     tmotorVex393_HBridge, openLoop, driveLeft)
+#pragma config(Motor,  port2,           clawMotor,     tmotorVex393_MC29, openLoop)
+#pragma config(Motor,  port3,           wristMotor,    tmotorVex393_MC29, openLoop)
+#pragma config(Motor,  port4,           elbowMotor,    tmotorVex393_MC29, openLoop)
+#pragma config(Motor,  port5,           shoulderMotor, tmotorVex393_MC29, openLoop)
+#pragma config(Motor,  port10,          rightMotor,    tmotorVex393_HBridge, openLoop, reversed, driveRight, encoderPort, None)
+//*!!Code automatically generated by 'ROBOTC' configuration wizard               !!*//
+
+
+task main()
+{
+	repeat (forever) {
+		if (vexRT[Btn8L] == 1) {
+			setMotor(port2, 127);
+		} else {
+			if (vexRT[Btn8R] == 1) {
+				setMotor(port2, -127);
+			} else {
+				stopMotor(port2);
+			}
+		}
+		arcadeControl(Ch3, Ch4, 10);
+		if (vexRT[Btn7L] == 1) {
+			setMotor(port3, 127);
+		} else {
+			if (vexRT[Btn7R] == 1) {
+				setMotor(port3, -127);
+			} else {
+				stopMotor(port3);
+			}
+		}
+		if (vexRT[Btn5D] == 1) {
+			setMotor(port4, 127);
+		} else {
+			if (vexRT[Btn5U] == 1) {
+				setMotor(port4, -127);
+			} else {
+				stopMotor(port4);
+			}
+		}
+		if (vexRT[Btn6D] == 1) {
+			setMotor(port5, 127);
+		} else {
+			if (vexRT[Btn6U] == 1) {
+				setMotor(port5, -127);
+			} else {
+				stopMotor(port5);
+			}
+		}
+		if (vexRT[Btn8D] == 1) {
+			forward(3, seconds, 127);
+			moveMotor(port4, 100, seconds, -127);
+		} else {
+			setMotor(port1, 127);
+		}
+	}
+}
+</CSource>
