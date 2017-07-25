@@ -1,5 +1,7 @@
 <Version>1.0.1</Version>
 
+<ProgrammingBlock type="comment">Vex Driver Program :)</ProgrammingBlock>
+
 <ProgrammingBlock type="loop" loopType="RepeatForever"/>
 
 <ProgrammingBlock type="loop" loopType="IfThen">
@@ -254,6 +256,7 @@
 
 task main()
 {
+	// Vex Driver Program :)
 	repeat (forever) {
 		if (vexRT[Btn8L] == 1) {
 			setMotor(port2, 127);
